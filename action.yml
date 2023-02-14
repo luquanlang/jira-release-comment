@@ -4,7 +4,7 @@ inputs:
   issue-key:  # id of input
     description: 'The issue key from JIRA. i.e ABC-123'
     required: true
-  build-name:
+  release-name:
     description: 'The name of the release that has to be announced'
     required: true
   platform: 
