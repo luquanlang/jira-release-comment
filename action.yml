@@ -13,9 +13,6 @@ inputs:
   release-type:
     description: 'Additional information about the release. i.e "Beta"'
     required: false
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
 runs:
   using: 'node16'
   main: 'index.js'
