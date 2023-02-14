@@ -1,0 +1,21 @@
+name: 'JIRA Release Comment'
+description: 'Posts a comment to announce a release in a JIRA issue'
+inputs:
+  issue-key:  # id of input
+    description: 'The issue key from JIRA. i.e ABC-123'
+    required: true
+  build-name:
+    description: 'The name of the release that has to be announced'
+    required: true
+  platform: 
+    description: 'The platform that publishes the release'
+    required: true
+  release-type:
+    description: 'Additional information about the release. i.e "Beta"'
+    required: false
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'
